@@ -1,0 +1,8 @@
+---
+- hosts: my_hosts
+  become: true
+  roles:
+    - my-role
+    - geerlingguy.memcached
+  vars_files:
+   - secret_group_vars/all.yml
